@@ -23,3 +23,8 @@ jobs:
         distribution: 'adopt'
     - name: Build with Maven
       run: mvn -B package --file pom.xml
+    - name: Store Jar package
+        uses: actions/upload-artifact@v2
+        with:
+          name: store-maven-package
+          path: target/*.jar
