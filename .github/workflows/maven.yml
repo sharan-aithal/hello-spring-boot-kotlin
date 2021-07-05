@@ -26,5 +26,5 @@ jobs:
     - name: Store Jar package
       uses: actions/upload-artifact@v2
       with:
-        name: store-maven-package
+        name: jar-package
         path: target/*.jar
